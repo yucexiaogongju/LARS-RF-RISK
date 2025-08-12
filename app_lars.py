@@ -59,8 +59,8 @@ BMI = st.sidebar.number_input("BMI (kg/m²)", min_value=10.0, max_value=50.0, va
 tumor_dist = st.sidebar.number_input("肿瘤距离 (cm)", min_value=0.0, max_value=50.0, value=5.0, step=0.1)
 surg_time = st.sidebar.number_input("手术时间 (分钟)", min_value=0.0, max_value=600.0, value=180.0, step=1.0)
 exhaust = st.sidebar.number_input("排气天数 (天)", min_value=0.0, max_value=30.0, value=2.0, step=0.5)
-tumor_size = st.sidebar.number_input("肿瘤大小 (cm)", min_value=0.1, max_value=20.0, value=3.0, step=0.1)
-TNM = st.sidebar.number_input("TNM 分期 (数值)", min_value=1.0, max_value=4.0, value=2.0, step=1.0)
+tumor_size = st.sidebar.number_input("肿瘤大小 (cm)", min_value=0.1, max_value=50.0, value=3.0, step=0.1)
+TNM = st.sidebar.number_input("TNM 分期 (数值)", min_value=0.0, max_value=4.0, value=2.0, step=1.0)
 neoadjuvant = st.sidebar.number_input("是否新辅助治疗 (0=否, 1=是)", min_value=0.0, max_value=1.0, value=0.0, step=1.0)
 
 # 预测功能
